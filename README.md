@@ -340,11 +340,53 @@ The system aims to localize tampered areas with high precision and analyze textu
 
 ---
 
-### 🛂 Automatic License Plate Recognition — *Marsa Maroc*  
-**Description:** Built a YOLOv5-based license plate recognition system for port security with real-time video processing.  
-**Technologies:** Python, YOLOv5, OpenCV, Pandas  
+### 🛂 Automatic License Plate Recognition System — *Marsa Maroc Security Project*  
+
+**Description:**  
+Developed a real-time **Automatic License Plate Recognition (ALPR)** system using YOLOv5 for securing vehicle exits at Marsa Maroc.  
+The system detects license plates, extracts characters with OCR, and verifies against a database of valid exit permits, aiming to automate and enhance port security.  
+
+**Key Features:**  
+- Real-time license plate detection with **YOLOv5** (trained for 30 epochs)  
+- OCR character extraction with **YOLOv5-based multi-class detection**  
+- Video processing pipeline with detection and database validation  
+- Django-based web interface (in progress) for real-time monitoring  
+- Integrated MySQL for permit management and system logging  
+
+**Performance Highlights:**  
+- ✅ License Plate Detection Precision: **97.1%** — Recall: **98.5%**  
+- ✅ OCR Character Recognition Precision: **88%** — Recall: **91.9%**  
+- 🕒 Video Frame Processing Time: **~614ms – 1292ms per frame**  
+- ⚡ Trained on custom dataset with extended augmentation for robustness
+
+
+**Visual Results & Sample Predictions:**  
+
+![Full Vehicle Detection with License Plate](./Image_car.jpg)  
+
+![Extracted License Plate for OCR](./plate_to_extract_text_from.jpg)  
+*Detected license plate cropped from the vehicle image — ready for character recognition.*  
+
+![YOLOv5 OCR Character Detection Result](./extraction_of_text.jpg)  
+*Character detection output on the license plate — bounding boxes with confidence scores for each recognized character.*  
+
+![Sorted Character Predictions from Model](./detection_res_car.jpg)  
+*Sorted character predictions with bounding box details and class mapping — automated sorting for correct license plate reconstruction.*  
+
+![Class Mapping Dictionary](./mappage.png)  
+*Sample of class mapping dictionary used to decode YOLOv5 class IDs into readable characters (digits/letters).*  
+
+![YOLOv5 Real-Time Detection on Video Frame](./video_detection_res.jpg)  
+*YOLOv5 running on a live video frame — real-time detection and character recognition results during video processing.*  
+
+
+**Technologies:** Python, YOLOv5, OpenCV, MySQL, Django, PhpMyAdmin  
 
 ---
+
+
+
+
 
 ### 🛒 E-Commerce Platform Development — *Palfarism*  
 **Description:** Developed a full-featured e-commerce platform using PHP and MySQL following MVC architecture.  
