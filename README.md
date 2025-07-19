@@ -32,24 +32,40 @@ The project integrates a user-friendly interface to apply, visualize, and compar
 
 ### 📊 Inflation Analysis and Interactive Visualization — *Survey-Based Data Analytics Project*  
 
-![Survey Insights Application Home](./inflation_app_home.png)  
-*Home page of the interactive application, providing access to data table, graphs, and prediction features.*  
-
-![Correlation Graph View](./inflation_app_graphs.png)  
-*Graph interface showcasing correlations and statistical insights derived from survey data.*  
-
 **Description:**  
-Designed and implemented a full-cycle data analysis project focused on perceptions and impacts of inflation in Morocco.  
-The project combined **survey data collection**, **exploratory data analysis (EDA)**, **statistical hypothesis testing**, and the development of an **interactive Flask web application** for dynamic data visualization and user interaction.  
+End-to-end data analytics project analyzing the perceptions and impacts of inflation in Morocco.  
+It combines targeted data collection, EDA, statistical hypothesis testing, and a Flask-based web app with dynamic visualization and prediction features.
 
 **Key Features:**  
-- Strategic data collection from targeted socio-economic groups  
-- Advanced EDA with Python, revealing key correlations and trends  
-- Hypothesis testing and statistical analysis (e.g., Chi-Square, t-tests, confidence intervals)  
-- Flask web application with interfaces for data browsing, interactive graphs, and prediction outputs  
-- Integrated filtering options for customized data exploration  
+- Data collection via custom-designed form  
+- Exploratory Data Analysis and correlation studies  
+- Hypothesis testing with real-time statistical result display  
+- Interactive web app with filters and user-specific predictions  
 
-**Technologies:** Python, Flask, Pandas, Plotly, Machine Learning, VS Code  
+**Screenshots:**  
+
+![App Home](./Image2.jpg)  
+*Home page of the Inflation Analysis app — entry point to access dataset, forms, and graphs.*  
+
+![Data Collection Form](./Image6.jpg)  
+*Inflation Data Collection Form — collecting key socio-economic data from users.*  
+
+![Submission Confirmation](./Image8.jpg)  
+*Form submission confirmation page with navigation to table, graphs, and prediction features.*  
+
+![Prediction Result](./Image9.jpg)  
+*Prediction interface — provides a summary of personalized insights based on user responses.*  
+
+![Data Visualization](./Image12.jpg)  
+*Interactive dashboard — displaying correlation between financial satisfaction and age group.*  
+
+![Hypothesis Test Result](./Image15.jpg)  
+*Hypothesis testing popup with statistical results on perceived price change impact.*  
+
+**Technologies:** Python, Flask, Pandas, Plotly, Machine Learning  
+
+---
+
  
 
 ---
