@@ -12,7 +12,7 @@ This portfolio highlights selected academic projects and professional experience
 ![IRM Audio Compression Interface](./image.png)  
 *Interface of the application allowing users to select audio files and apply the IRM compression algorithm.*  
 
-![Compression Result Example](./image1.png)  
+![Compression Result Example](./Image1.png)  
 *Output showcasing compression results, file size reduction, and comparison with standard formats.*  
 
 **Description:**  
