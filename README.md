@@ -9,10 +9,10 @@ This portfolio highlights selected academic projects and professional experience
 
 ### 🎧 Audio Compression System — *IRM Custom Audio Format*  
 
-![IRM Audio Compression Interface](./image.png)  
+![IRM Audio Compression Interface](./Image1.png)  
 *Interface of the application allowing users to select audio files and apply the IRM compression algorithm.*  
 
-![Compression Result Example](./Image1.png)  
+![Compression Result Example](./image.png)  
 *Output showcasing compression results, file size reduction, and comparison with standard formats.*  
 
 **Description:**  
@@ -30,9 +30,27 @@ The project integrates a user-friendly interface to apply, visualize, and compar
 
 ---
 
-### 📊 Inflation Analysis in Morocco  
-**Description:** Built a Flask web app for visualizing and predicting inflation trends using EDA and Machine Learning.  
-**Technologies:** Python, Flask, Pandas, Plotly  
+### 📊 Inflation Analysis and Interactive Visualization — *Survey-Based Data Analytics Project*  
+
+![Survey Insights Application Home](./inflation_app_home.png)  
+*Home page of the interactive application, providing access to data table, graphs, and prediction features.*  
+
+![Correlation Graph View](./inflation_app_graphs.png)  
+*Graph interface showcasing correlations and statistical insights derived from survey data.*  
+
+**Description:**  
+Designed and implemented a full-cycle data analysis project focused on perceptions and impacts of inflation in Morocco.  
+The project combined **survey data collection**, **exploratory data analysis (EDA)**, **statistical hypothesis testing**, and the development of an **interactive Flask web application** for dynamic data visualization and user interaction.  
+
+**Key Features:**  
+- Strategic data collection from targeted socio-economic groups  
+- Advanced EDA with Python, revealing key correlations and trends  
+- Hypothesis testing and statistical analysis (e.g., Chi-Square, t-tests, confidence intervals)  
+- Flask web application with interfaces for data browsing, interactive graphs, and prediction outputs  
+- Integrated filtering options for customized data exploration  
+
+**Technologies:** Python, Flask, Pandas, Plotly, Machine Learning, VS Code  
+ 
 
 ---
 
