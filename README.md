@@ -94,21 +94,51 @@ It combines targeted data collection, EDA, statistical hypothesis testing, and a
 
 ---
 
-### 🗣️ Sentiment Analysis on Public Opinions  
-**Description:** Created a Flask app for sentiment analysis on controversial topics using NLP and Machine Learning.  
-**Technologies:** Python, Flask, Scikit-learn  
-
----
-
 ### 💪 Fitness Application with Azure Integration  
 **Description:** Built a fitness app with secure authentication via Azure AD and automated notifications using Azure Logic Apps.  
 **Technologies:** Java, Hibernate, Azure AD, SQL Server  
 
 ---
 
-### 🌦️ IoT Weather Monitoring System  
-**Description:** Developed a smart IoT system for real-time environmental monitoring with data visualization using Node-RED.  
-**Technologies:** Arduino, Raspberry Pi, Node-RED, Python  
+### 🌦️ IoT-Based Smart Weather Detection System — *SOLLIS Project*  
+
+**Description:**  
+Developed a smart weather detection system leveraging IoT technologies for real-time indoor environment monitoring.  
+The system integrates sensors, actuators, and data visualization dashboards, enabling dynamic control and monitoring of temperature, humidity, and light intensity within indoor spaces.  
+
+**Key Features:**  
+- 📡 Real-time data collection from light and temperature sensors  
+- 💡 Adaptive LED brightness control based on ambient light levels  
+- 🖥️ LCD display showing live temperature and weather status  
+- 🗄️ Raspberry Pi-based gateway handling data processing and MQTT communication  
+- 📊 Node-RED dashboard for real-time visualization and historical trend analysis  
+- 🔁 Continuous data updates and user interaction with the environment  
+
+**System Components:**  
+- Arduino + Sensors (Photoresistor, DHT22)  
+- Raspberry Pi (data gateway & MQTT broker)  
+- Node-RED Dashboard (UI & data visualization)  
+- Actuators: LEDs, LCD Screen  
+
+**Example Workflow:**  
+- The system detects light intensity and temperature  
+- LEDs adjust brightness based on detected light  
+- Data sent via MQTT to Node-RED for visualization  
+- User views real-time and historical data on the dashboard  
+
+**Technologies:** Arduino, Raspberry Pi, Node-RED, Python, MQTT  
+
+**Screenshots:**  
+
+![Complete System Setup](./Image17.jpg)  
+*Complete system setup integrating Arduino with sensors, actuators, and Raspberry Pi gateway — demonstrating full IoT workflow and communication setup.*  
+
+![LCD Display Output](./Image18.jpg)  
+*LCD display showing real-time weather status and temperature readings, providing direct feedback from the sensors.*  
+
+![Sensor and Actuator Integration](./Image19.jpg)  
+*Close-up of the sensor and actuator setup on a breadboard — showcasing LEDs reacting to ambient light and live data being processed by the Arduino.*  
+
 
 ---
 
