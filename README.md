@@ -7,9 +7,26 @@ This portfolio highlights selected academic projects and professional experience
 
 ## 🎓 Academic Projects  
 
-### 🎧 Audio Compression System  
-**Description:** Developed a novel audio compression format using LZW and Discrete Wavelet Transform (DWT) for multi-resolution analysis.  
+### 🎧 Audio Compression System — *IRM Custom Audio Format*  
+
+![IRM Audio Compression Interface](./image.png)  
+*Interface of the application allowing users to select audio files and apply the IRM compression algorithm.*  
+
+![Compression Result Example](./image1.png)  
+*Output showcasing compression results, file size reduction, and comparison with standard formats.*  
+
+**Description:**  
+Designed a custom audio compression system named **IRM**, combining **Discrete Wavelet Transform (DWT)** for multi-resolution analysis with the **Lempel-Ziv-Welch (LZW)** algorithm for data reduction.  
+The project integrates a user-friendly interface to apply, visualize, and compare compression results with common formats like WAV and OGG.  
+
+**Key Features:**  
+- Multi-resolution signal analysis with DWT  
+- Entropy-based data compression using LZW  
+- Compression/decompression process with quality retention  
+- GUI-based interaction for audio processing  
+
 **Technologies:** Python, NumPy, Tkinter  
+ 
 
 ---
 
