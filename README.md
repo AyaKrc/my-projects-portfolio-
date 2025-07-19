@@ -286,9 +286,57 @@ The system allows users to explore, publish, edit, and interact with recipes thr
 
 ## 💼 Professional Experience  
 
-### 🏦 AI Document Fraud Detection System — *Attijariwafa Bank*  
-**Description:** Developed a document fraud detection system combining Segformer, OCR, and LLaMA for semantic verification.  
-**Technologies:** Python, Segformer, LLaMA, OCR, MongoDB, Flask, React  
+### 🕵️‍♂️ AI-Based Document Forgery Detection — *Attijariwafa Bank Industrial Project*  
+
+**Description:**  
+Developed a hybrid AI system for detecting forged regions in digitized documents by combining **Visual Deep Learning (SegFormer)** with **Semantic Analysis (OCR + LLaMA-3)**.  
+The system aims to localize tampered areas with high precision and analyze textual inconsistencies, providing a comprehensive fraud detection solution for banking operations.  
+
+**Key Features:**  
+- 🖼️ Visual forgery detection using SegFormer-based segmentation model  
+- 📄 Hierarchical OCR pipeline for structured text extraction from scanned documents  
+- 🤖 Semantic inconsistency analysis powered by LLaMA-3 large language model  
+- 🏭 Microservice-based architecture with Flask (backend) and React (frontend)  
+- 💬 Explainable AI with visual attention overlays and semantic mismatch reporting  
+
+**Technical Approach:**  
+- Custom dataset construction with tampered and original documents  
+- Fine-tuned SegFormer model for binary tampering segmentation with hybrid loss (Focal Tversky + Dice)  
+- OCR pipeline combining Tesseract and LLMWhisperer  
+- LLaMA-3 based semantic detection of anomalies in extracted text  
+- REST APIs serving segmentation and semantic analysis results  
+
+**Key Results:**  
+- Visual detection recall: **86.5%** on evaluation set  
+- Average IoU on segmentation masks: **0.72**  
+- System throughput: **< 1.5s per document** on benchmark hardware
+
+
+**Sample Results:**  
+
+| Ground Truth vs Predicted Masks |  
+|---|  
+| ![Case 1 - Ground Truth & Prediction](./RES1.png) |  
+*Case 1 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
+
+| ![Case 2 - Ground Truth & Prediction](./RES2.png) |  
+*Case 2 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
+
+| ![Case 3 - Ground Truth & Prediction](./RES3.png) |  
+*Case 3 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
+
+---
+
+**Visual Tampering Detection Interface:**  
+
+![Tampering Detection on Document Sample](./RES4.png)  
+*Tampering visualization in the deployed system — the model successfully highlighted forged areas directly on the scanned document within the web application interface.*  
+
+
+**Technologies:** Python, PyTorch, SegFormer, OCR (LLMWhisperer,Tesseract), LLaMA-3 (Groq API), MongoDB, Flask, React  
+
+
+
 
 ---
 
