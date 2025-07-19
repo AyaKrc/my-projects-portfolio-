@@ -66,25 +66,63 @@ It combines targeted data collection, EDA, statistical hypothesis testing, and a
 
 ---
 
- 
+### 📝 AI-Generated Text Detection — *NLP & Machine Learning Project*  
+
+**Description:**  
+Developed a robust system for detecting AI-generated text using advanced NLP techniques and Machine Learning models.  
+The project pipeline integrates data preprocessing, lexical and syntactic feature engineering, and model evaluation on balanced datasets containing both human-written and AI-generated text samples.  
+
+**Key Features:**  
+- 🧹 Comprehensive text preprocessing (cleaning, lemmatization, stopword removal)  
+- 🗃️ Feature engineering including word count, average word length, vocabulary richness, POS tags, sentiment analysis, and readability metrics  
+- 📊 TF-IDF vectorization for contextual feature extraction  
+- 🤖 Comparative study of ML models: Logistic Regression, Naive Bayes, Random Forest, Neural Networks  
+- 📝 Achieved **99% accuracy** with the Neural Network model on the validation set  
+
+**Modeling Approach:**  
+- Baseline models: Logistic Regression, Naive Bayes, Random Forest  
+- Deep Learning model: Neural Network with Dropout & ReLU activations  
+- Evaluation using Accuracy, Precision, Recall, F1-Score, and Confusion Matrix  
+
+**Technologies:** Python, Scikit-learn, NLTK, Pandas, NumPy, TensorFlow/Keras  
 
 ---
 
-### 📝 AI-Generated Text Detection  
-**Description:** Implemented a machine learning classifier for detecting AI-generated texts using TF-IDF, sentiment analysis, and text complexity metrics.  
-**Technologies:** Python, Scikit-learn, NLTK, Pandas  
+**Results Highlights:**  
+- 🏆 Neural Network Model: **99% Accuracy, 99% F1-Score**  
+- Logistic Regression: **97.25% Accuracy**  
+- Naive Bayes: **91.8% Accuracy**  
+- Random Forest: **91.3% Accuracy**  
+
 
 ---
 
-### 🔒 Medical Data Security Architecture  
-**Description:** Designed a secure architecture for managing medical data with encryption, role-based access, and audit trails on Oracle.  
-**Technologies:** Oracle, SQL, PL/SQL  
+### 🔒 Advanced Data Security for Healthcare Systems — *Oracle Database Administration Project*  
 
----
+**Description:**  
+Designed and implemented a secure database architecture for healthcare data management using **Oracle Database**.  
+This project integrates advanced security mechanisms such as encryption, masking, role-based access control, and auditing to ensure data confidentiality, integrity, and compliance with healthcare regulations.  
 
-### 🍳 Recipe Web Application  
-**Description:** Developed a full-stack Spring Boot application for managing culinary recipes with CRUD operations.  
-**Technologies:** Java, Spring Boot, MySQL  
+**Key Features:**  
+- 🔐 Role-based access control with user-specific privileges  
+- 🗝️ Data encryption for sensitive patient, medical, and financial information  
+- 🕵️ Data masking on critical fields (personal details, diagnoses, contact information)  
+- 🔒 Database Vault for enhanced data access control  
+- 📜 Unified auditing for activity monitoring and anomaly detection  
+- 🗄️ Secure data model covering patients, doctors, hospitals, diagnostics, and billing  
+
+**Core Entities & Relationships:**  
+- Patient, Doctor, Nurse, Hospital, Bill, Patient_Diagnostic  
+- Managed via one-to-many and many-to-one relationships with enforced referential integrity  
+
+**Technical Approach:**  
+- Oracle SQL Developer for schema design and user management  
+- Implementation of encryption wallets and key management  
+- Data masking with Oracle Data Redaction  
+- Unified Auditing for centralized security monitoring  
+
+**Technologies:** Oracle Database, SQL Developer, Oracle Data Vault, Oracle Unified Auditing  
+
 
 ---
 
@@ -215,6 +253,34 @@ The system classifies four primary emotions — **Happiness, Sadness, Fear, and 
 - **Sales Dashboard in Excel:** Sales data analysis with Excel dashboards.  
 - **Web Planner App with Calendar:** Django-based planner with category management and interactive calendar. *(Django, FullCalendar)*  
 - **Power BI Dashboard - Blinkit Sales Performance:** Visualized Blinkit app sales with Power BI.  
+
+
+
+---
+
+### 🍳 Web Application for Sharing Culinary Recipes — *Spring Boot MVC Project*  
+
+**Description:**  
+Designed and developed a full-stack web application for culinary recipe sharing.  
+The system allows users to explore, publish, edit, and interact with recipes through comments and favorites. The project emphasizes modular design using **Spring Boot (MVC Architecture)**, ensuring scalability, maintainability, and a smooth user experience.  
+
+**Key Features:**  
+- 🧑‍🍳 User authentication, registration, and profile management  
+- 📑 Personal dashboard displaying user's recipes and comments  
+- 📝 CRUD operations for recipe management with image upload support  
+- ⭐ Community interaction through comments and recipe favoriting  
+- 📂 Categorization of recipes for easy browsing  
+- 🖥️ MVC architecture with Thymeleaf front-end  
+
+**Core System Components:**  
+- **Entities:** User, Recipe, Comment, Category  
+- **Relationships:**  
+  - One-to-Many (User–Recipe, User–Comment)  
+  - Many-to-Many (User–Favorite Recipes)  
+  - One-to-Many (Category–Recipe)  
+
+**Technologies:** Java, Spring Boot, Thymeleaf, MySQL, Spring Security, JPA/Hibernate  
+
 
 ---
 
