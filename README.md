@@ -445,6 +445,7 @@ The system detects license plates, extracts characters with OCR, and verifies ag
 - **Responsive dashboards:** Data-driven views for sales, inventory status, and activity monitoring.
 
 **Impact:** Digitized the sales cycle and strengthened the client’s online presence, opening a new revenue channel.
+
 **Tech stack:** PHP, MySQL, HTML, CSS, Bootstrap  
 
 ---
