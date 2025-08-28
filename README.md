@@ -177,8 +177,6 @@ The system classifies four primary emotions — **Happiness, Sadness, Fear, and 
 **Preprocessing:** Lowercasing + punctuation strip; word-level tokenization (NLTK); vocab with special tokens (<PAD>, <SOS>, <EOS>, <UNK>); index + pad; build train/val/test loaders (80/10/10).
 
 **Models:** Baseline seq2seq LSTM encoder–decoder (PyTorch) and an advanced variant with a custom LSTM Peephole cell; Seq2Seq forward with teacher forcing; metrics: token-level cross-entropy and validation accuracy.
-
-
 **Tech stack:** PyTorch, Transformers (HF), datasets (HF), NLTK, pandas, tqdm, matplotlib.
 ---
 
