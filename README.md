@@ -166,6 +166,7 @@ The system classifies four primary emotions — **Happiness, Sadness, Fear, and 
 ---
 
 ### 🔤 English ↔ Darija (Moroccan Arabic) Neural Machine Translation 
+
 **Description:** Built a low-resource English–Darija translation pipeline: cleaned a noisy parallel corpus, filled missing English sentences via back-translation, then trained a custom seq2seq LSTM (with a peephole variant) and ran a small hyper-parameter study.
 
 **Problem:** Public Darija–English datasets are small and very incomplete (≈85% of the eng side missing in the sentences split). Dropping those rows would destroy supervision, so we first recover the English side before modeling.
@@ -177,7 +178,10 @@ The system classifies four primary emotions — **Happiness, Sadness, Fear, and 
 **Preprocessing:** Lowercasing + punctuation strip; word-level tokenization (NLTK); vocab with special tokens (<PAD>, <SOS>, <EOS>, <UNK>); index + pad; build train/val/test loaders (80/10/10).
 
 **Models:** Baseline seq2seq LSTM encoder–decoder (PyTorch) and an advanced variant with a custom LSTM Peephole cell; Seq2Seq forward with teacher forcing; metrics: token-level cross-entropy and validation accuracy.
+
 **Tech stack:** PyTorch, Transformers (HF), datasets (HF), NLTK, pandas, tqdm, matplotlib.
+
+
 ---
 
 
