@@ -135,7 +135,7 @@ The system aims to localize tampered areas with high precision and analyze textu
 
 ---
 
-# 🛂 Automatic License Plate Recognition System — *Marsa Maroc Security Project*  
+# 🛂 Automatic License Plate Recognition System  
 
 **Description:**  
 Developed a real-time **Automatic License Plate Recognition (ALPR)** system using YOLOv5 for securing vehicle exits at Marsa Maroc.  
