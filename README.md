@@ -1,4 +1,4 @@
-# 🚀 Aya Karbich | Project Portfolio  
+# 🚀 Project Portfolio  
 
 Welcome to my project showcase!  
 This portfolio highlights selected academic projects and professional experiences in AI, Data Engineering, Web Development, and IoT.  
@@ -82,7 +82,7 @@ The system leverages Google's Gemini AI models to interpret user questions, auto
 ---
 
 
-### 🕵️‍♂️ AI-Based Document Fraud Detection 
+# 🕵️‍♂️ AI-Based Document Fraud Detection 
 
 **Description:**  
 Developed a hybrid AI system for detecting forged regions in digitized documents by combining **Visual Deep Learning (SegFormer)** with **Semantic Analysis (OCR + LLaMA-3)**.  
@@ -135,7 +135,7 @@ The system aims to localize tampered areas with high precision and analyze textu
 
 ---
 
-### 🛂 Automatic License Plate Recognition System — *Marsa Maroc Security Project*  
+# 🛂 Automatic License Plate Recognition System — *Marsa Maroc Security Project*  
 
 **Description:**  
 Developed a real-time **Automatic License Plate Recognition (ALPR)** system using YOLOv5 for securing vehicle exits at Marsa Maroc.  
@@ -181,7 +181,7 @@ The system detects license plates, extracts characters with OCR, and verifies ag
 ---
 
 
-### 📊 Inflation Analysis and Interactive Visualization — *Survey-Based Data Analytics Project*  
+# 📊 Inflation Analysis and Interactive Visualization — *Survey-Based Data Analytics Project*  
 
 **Description:**
 
@@ -259,7 +259,7 @@ End-to-end data analytics project analyzing the perceptions and impacts of infla
 
 ---
 
-### 📝 AI-Generated Text Detection — *NLP & Machine Learning Project*  
+# 📝 AI-Generated Text Detection — *NLP & Machine Learning Project*  
 
 **Description:**  
 Developed a robust system for detecting AI-generated text using advanced NLP techniques and Machine Learning models.  
@@ -290,7 +290,7 @@ The project pipeline integrates data preprocessing, lexical and syntactic featur
 
 ---
 
-### 😊 Facial Emotion Recognition with EfficientNetV2M and Attention Mechanisms — *AffectNet Case Study*  
+# 😊 Facial Emotion Recognition with EfficientNetV2M and Attention Mechanisms — *AffectNet Case Study*  
 
 **Description:**  
 Developed a deep learning model for **Facial Emotion Recognition (FER)** based on **EfficientNetV2M** architecture, enhanced with attention mechanisms for improved feature focus and model interpretability.  
@@ -336,7 +336,7 @@ The system classifies four primary emotions — **Happiness, Sadness, Fear, and 
 
 ---
 
-### 🔤 English ↔ Darija (Moroccan Arabic) Neural Machine Translation 
+# 🔤 English ↔ Darija (Moroccan Arabic) Neural Machine Translation 
 
 **Description:** Built a low-resource English–Darija translation pipeline: cleaned a noisy parallel corpus, filled missing English sentences via back-translation, then trained a custom seq2seq LSTM (with a peephole variant) and ran a small hyper-parameter study.
 
@@ -356,7 +356,7 @@ The system classifies four primary emotions — **Happiness, Sadness, Fear, and 
 ---
 
 
-### 🔒 Advanced Data Security for Healthcare Systems — *Oracle Database Administration Project*  
+# 🔒 Advanced Data Security for Healthcare Systems — *Oracle Database Administration Project*  
 
 **Description:**  
 Designed and implemented a secure database architecture for healthcare data management using **Oracle Database**.  
@@ -386,7 +386,7 @@ This project integrates advanced security mechanisms such as encryption, masking
 ---
 
 
-### 🌦️ IoT-Based Smart Weather Detection System — *SOLLIS Project*  
+# 🌦️ IoT-Based Smart Weather Detection System — *SOLLIS Project*  
 
 **Description:**  
 Developed a smart weather detection system leveraging IoT technologies for real-time indoor environment monitoring.  
@@ -432,7 +432,7 @@ The system integrates sensors, actuators, and data visualization dashboards, ena
 
 ---
 
-### 🎧 Audio Compression System — *IRM Custom Audio Format*  
+# 🎧 Audio Compression System — *IRM Custom Audio Format*  
 
 ![IRM Audio Compression Interface](./Image1.png)  
 *Interface of the application allowing users to select audio files and apply the IRM compression algorithm.*  
@@ -455,7 +455,7 @@ The project integrates a user-friendly interface to apply, visualize, and compar
 ---
 
 
-### 🏥 Healthcare Data Processing Pipeline  
+# 🏥 Healthcare Data Processing Pipeline  
 **Description:** Built a real-time Big Data pipeline for healthcare data using Pulsar, Airflow, TensorFlow, and Neo4j.  
 **Technologies:** Apache Pulsar, Airflow, Snowflake, Neo4j, TensorFlow  
 
@@ -475,7 +475,7 @@ The project integrates a user-friendly interface to apply, visualize, and compar
 
 ---
 
-### 🍳 Web Application for Sharing Culinary Recipes — *Spring Boot MVC Project*  
+# 🍳 Web Application for Sharing Culinary Recipes — *Spring Boot MVC Project*  
 
 **Description:**  
 Designed and developed a full-stack web application for culinary recipe sharing.  
@@ -505,7 +505,7 @@ The system allows users to explore, publish, edit, and interact with recipes thr
 
 
 
-### 🛒 E-Commerce Platform Development — *Palfarism*  
+# 🛒 E-Commerce Platform Development   
 **Description:** Developed a full-featured e-commerce platform using PHP and MySQL following MVC architecture.  
 **Key Deliverables:**
 
@@ -519,10 +519,5 @@ The system allows users to explore, publish, edit, and interact with recipes thr
 
 **Tech stack:** PHP, MySQL, HTML, CSS, Bootstrap  
 
----
 
-## 📝 Contact  
-Feel free to reach out for collaboration or inquiries!  
-
----
 
