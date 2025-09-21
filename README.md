@@ -8,6 +8,199 @@ This portfolio highlights selected academic projects and professional experience
 ## 🎓 Academic Projects  
 
 
+
+
+---
+
+
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+}
+
+\setlist[itemize]{leftmargin=*,nosep}
+\setlist[description]{leftmargin=1.5em,labelindent=0em,itemsep=0.25em}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Ask-Your-Data: AI-Powered Data Analysis Platform — \textit{GenAI Analyst}}}\par
+\vspace{0.5em}
+\end{center}
+
+\section*{Description}
+Developed a sophisticated \textbf{AI-powered data analysis platform} that transforms how users interact with their data through natural language processing and automated visualization generation. The system leverages Google's Gemini AI models to interpret user questions, automatically select appropriate analysis methods, and generate publication-ready visualizations, making advanced analytics accessible to non-technical users.
+
+\section*{Key Features}
+\begin{itemize}
+  \item Natural language data queries with \textbf{Gemini 2.5 Pro/Flash} models
+  \item \textbf{15+ automated analysis functions} covering statistics, ML, and visualization
+  \item Intelligent dashboard generation with \textbf{4--8 smart visualizations}
+  \item Real-time data preprocessing and quality assessment
+  \item \textbf{LangChain integration} for structured tool calling and prompt management
+  \item Drag-and-drop dashboard customization with interactive plot management
+\end{itemize}
+
+\section*{Performance Highlights}
+\begin{itemize}
+  \item \textbf{Auto Dashboard Generation:} Creates comprehensive dashboards in \textbf{\(\sim\)5--10 seconds}
+  \item \textbf{Query Processing:} Natural language to visualization in \textbf{\(\sim\)2--4 seconds}
+  \item \textbf{Data Capacity:} Handles datasets up to \textbf{200MB} (CSV limit)
+  \item \textbf{Tool Selection Accuracy:} \textbf{\(\sim\)95\%} correct analysis method selection
+  \item \textbf{Visualization Types:} \textbf{12+ chart types} with automatic selection
+  \item \textbf{Fallback System:} Automatic model switching on rate limits (Pro \(\rightarrow\) Flash)
+\end{itemize}
+
+\section*{Core Capabilities \& Analysis Tools}
+
+\subsection*{Statistical Analysis}
+\begin{itemize}
+  \item Comprehensive dataset summaries and statistical overviews
+  \item Correlation analysis with heatmap generation
+  \item Group-by aggregations (sum, mean, count, max, min)
+  \item Distribution analysis via histograms and box plots
+\end{itemize}
+
+\subsection*{Advanced Analytics}
+\begin{itemize}
+  \item \textbf{Time Series Decomposition} --- Trend, seasonal, and residual analysis
+  \item \textbf{Outlier Detection} --- IQR and Z-score based anomaly identification
+  \item \textbf{Feature Importance} --- Random Forest-based predictive modeling
+  \item \textbf{Distribution Comparison} --- Violin plots for cross-category analysis
+\end{itemize}
+
+\subsection*{Smart Visualization Engine}
+\begin{itemize}
+  \item Automatic chart type selection based on data characteristics
+  \item 7 color palettes with force override capability
+  \item Interactive Plotly charts with export functionality
+  \item Responsive layout with adjustable columns and theming
+\end{itemize}
+
+\section*{Visual Results \& Interface Demonstrations}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{Image_1.jpg}
+  \caption{Auto Dashboard Interface --- Main dashboard showing the ``Intelligent Dashboard'' with uploaded \texttt{car\_prices.csv}; sidebar controls for preprocessing and customization on the left.}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{Image_2.jpg}
+  \caption{Dashboard Management --- Drag-to-reorder interface with 8 active plots (summary, histograms, correlation heatmap, scatter, distribution comparisons). Draggable elements highlighted for intuitive reordering.}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{Image_3.jpg}
+  \caption{Generated Visualizations --- Auto-generated dashboard with 6 key plots: histogram of odometer, correlation heatmap, scatter (odometer vs. selling price), top car makes bar chart, distribution by body type, and time-series trend analysis.}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{Image_4.jpg}
+  \caption{Custom Plot Generation --- Natural language input (e.g., ``Show sales trends over time'') with prompt suggestions such as revenue comparison, customer age distribution, and feature correlation analysis.}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{Image_5.jpg}
+  \caption{Natural Language Query Results --- Query ``What are the top 5 categories by revenue?'' processed with Gemini 2.5 Pro, returning an interactive bar chart (e.g., Ford leading with \$1.36B).}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{Image_6.jpg}
+  \caption{Data Preview \& Schema --- First 10 rows of the car dataset with schema details (types: \texttt{object}, \texttt{int64}, \texttt{float64}) for columns such as year, make, model, body type, transmission, VIN, state, condition, odometer, color, seller, MMR, selling price, and sale date.}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{Image_7.jpg}
+  \caption{Data Quality Report --- Example: 558{,}837 rows \(\times\) 16 columns; 13/16 columns with missing data (transmission 11.69\%, body 2.36\%, condition 2.12\%, trim 1.91\%, model 1.86\%). Types: 11 \texttt{object}, 4 \texttt{float64}.}
+\end{figure}
+
+\clearpage
+
+\section*{Implementation Architecture}
+
+\subsection*{Technical Stack}
+\begin{itemize}
+  \item \textbf{Frontend:} Streamlit with \texttt{streamlit-sortables} for interactive UI
+  \item \textbf{AI Models:} Google Gemini 2.5 Pro/Flash via LangChain
+  \item \textbf{Data Processing:} Pandas, NumPy, SciPy
+  \item \textbf{Visualization:} Plotly for interactive charts
+  \item \textbf{ML Libraries:} scikit-learn for advanced analytics
+  \item \textbf{Statistical Analysis:} statsmodels for time series decomposition
+\end{itemize}
+
+\subsection*{System Components}
+\begin{itemize}
+  \item \texttt{app.py}: Main Streamlit interface with 4 interactive tabs
+  \item \texttt{tools.py}: 15+ analysis functions with robust error handling
+  \item \texttt{chains.py}: LangChain integration for AI tool binding
+  \item \texttt{system\_analyst.md}: Expert prompt engineering for data analyst behavior
+\end{itemize}
+
+\section*{Key Innovations}
+
+\subsection*{Intelligent Features}
+\begin{itemize}
+  \item \textbf{Smart Column Matching} --- Fuzzy matching for column name suggestions
+  \item \textbf{Type Coercion} --- Automatic conversion of string numbers (\$, \%, commas)
+  \item \textbf{Error Recovery} --- Helpful suggestions when operations fail
+  \item \textbf{Memory Optimization} --- Intelligent sampling for large datasets
+  \item \textbf{Business Insights} --- Converts statistical findings to actionable language
+\end{itemize}
+
+\section*{Deployment \& Configuration}
+
+\subsection*{Quick Setup}
+\begin{verbatim}
+# API Configuration
+GOOGLE_AI_API_KEY=your_api_key
+
+# Model Selection (configurable)
+Primary Model: gemini-2.5-pro
+Fallback Model: gemini-2.5-flash
+\end{verbatim}
+
+\section*{Use Cases \& Impact}
+
+\subsection*{Business Intelligence}
+\begin{itemize}
+  \item Democratizes data analysis for non-technical users
+  \item Reduces time-to-insight from hours to seconds
+  \item Enables self-service analytics without SQL knowledge
+  \item Generates executive-ready reports and dashboards
+\end{itemize}
+
+\subsection*{Target Users}
+\begin{itemize}
+  \item Business analysts seeking rapid insights
+  \item Product managers needing quick data exploration
+  \item Executives requiring automated reporting
+  \item Data teams looking to accelerate analysis workflows
+\end{itemize}
+
+\section*{Tech Stack}
+Python, Streamlit, LangChain, Google Gemini AI, Plotly, Pandas, Scikit-learn, statsmodels
+
+\vspace{1em}
+\emph{This platform represents a paradigm shift in data analysis accessibility, combining the power of large language models with sophisticated data science techniques to create an intuitive, yet powerful analytics solution that bridges the gap between complex data and actionable insights.}
+
+\end{document}
+
+
 ---
 
 ### 📊 Inflation Analysis and Interactive Visualization — *Survey-Based Data Analytics Project*  
