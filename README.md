@@ -5,7 +5,6 @@ This portfolio highlights selected academic projects and professional experience
 
 ---
 
-## 🎓 Academic Projects  
 
 
 
@@ -45,11 +44,6 @@ The system leverages Google's Gemini AI models to interpret user questions, auto
 - **Feature Importance** — Random Forest-based modeling  
 - **Distribution Comparison** — violin plots across categories  
 
-### 🎨 Smart Visualization Engine
-- Automatic chart type selection based on data characteristics  
-- 7 color palettes with force override capability  
-- Interactive Plotly charts with export  
-- Responsive layout with adjustable columns and theming  
 
 ## Visual Results & Interface Demonstrations
 
@@ -83,6 +77,105 @@ The system leverages Google's Gemini AI models to interpret user questions, auto
 - **Visualization:** Plotly  
 - **ML Libraries:** scikit-learn  
 - **Stats/TS:** statsmodels (time series decomposition)  
+
+
+---
+
+
+### 🕵️‍♂️ AI-Based Document Fraud Detection 
+
+**Description:**  
+Developed a hybrid AI system for detecting forged regions in digitized documents by combining **Visual Deep Learning (SegFormer)** with **Semantic Analysis (OCR + LLaMA-3)**.  
+The system aims to localize tampered areas with high precision and analyze textual inconsistencies, providing a comprehensive fraud detection solution for banking operations.  
+
+**Key Features:**  
+- Visual forgery detection using SegFormer-based segmentation model  
+- Hierarchical OCR pipeline for structured text extraction from scanned documents  
+- Semantic inconsistency analysis powered by LLaMA-3 large language model  
+- Microservice-based architecture with Flask (backend) and React (frontend)  
+- Explainable AI with visual attention overlays and semantic mismatch reporting  
+
+**Technical Approach:**  
+- Custom dataset construction with tampered and original documents  
+- Fine-tuned SegFormer model for binary tampering segmentation with hybrid loss (Focal Tversky + Dice)  
+- OCR pipeline combining Tesseract and LLMWhisperer  
+- LLaMA-3 based semantic detection of anomalies in extracted text  
+- REST APIs serving segmentation and semantic analysis results  
+
+**Key Results:**  
+- Visual detection recall: **86.5%** on evaluation set  
+- Average IoU on segmentation masks: **0.72**  
+- System throughput: **< 1.5s per document** on benchmark hardware
+
+**Tech stack:** Python, PyTorch, SegFormer, OCR (LLMWhisperer,Tesseract), LLaMA-3 (Groq API), MongoDB, Flask, React  
+
+
+
+**Sample Results:**  
+
+| Ground Truth vs Predicted Masks |  
+|---|  
+| ![Case 1 - Ground Truth & Prediction](./RES1.png) |  
+*Case 1 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
+
+| ![Case 2 - Ground Truth & Prediction](./RES2.png) |  
+*Case 2 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
+
+| ![Case 3 - Ground Truth & Prediction](./RES3.png) |  
+*Case 3 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
+
+---
+
+**Visual Tampering Detection Interface:**  
+
+![Tampering Detection on Document Sample](./RES4.png)  
+*Tampering visualization in the deployed system — the model successfully highlighted forged areas directly on the scanned document within the web application interface.*  
+
+
+
+---
+
+### 🛂 Automatic License Plate Recognition System — *Marsa Maroc Security Project*  
+
+**Description:**  
+Developed a real-time **Automatic License Plate Recognition (ALPR)** system using YOLOv5 for securing vehicle exits at Marsa Maroc.  
+The system detects license plates, extracts characters with OCR, and verifies against a database of valid exit permits, aiming to automate and enhance port security.  
+
+**Key Features:**  
+- Real-time license plate detection with **YOLOv5** (trained for 30 epochs)  
+- OCR character extraction with **YOLOv5-based multi-class detection**  
+- Video processing pipeline with detection and database validation  
+- Django-based web interface (in progress) for real-time monitoring  
+- Integrated MySQL for permit management and system logging  
+
+**Performance Highlights:**  
+- License Plate Detection Precision: **97.1%** — Recall: **98.5%**  
+- OCR Character Recognition Precision: **88%** — Recall: **91.9%**  
+- Video Frame Processing Time: **~614ms – 1292ms per frame**  
+- Trained on custom dataset with extended augmentation for robustness
+
+
+**Visual Results & Sample Predictions:**  
+
+![Full Vehicle Detection with License Plate](./Image_car.jpg)  
+
+![Extracted License Plate for OCR](./plate_to_extract_text_from.jpg)  
+*Detected license plate cropped from the vehicle image — ready for character recognition.*  
+
+![YOLOv5 OCR Character Detection Result](./extraction_of_text.jpg)  
+*Character detection output on the license plate — bounding boxes with confidence scores for each recognized character.*  
+
+![Sorted Character Predictions from Model](./detection_res_car.jpg)  
+*Sorted character predictions with bounding box details and class mapping — automated sorting for correct license plate reconstruction.*  
+
+![Class Mapping Dictionary](./mappage.png)  
+*Sample of class mapping dictionary used to decode YOLOv5 class IDs into readable characters (digits/letters).*  
+
+![YOLOv5 Real-Time Detection on Video Frame](./video_detection_res.jpg)  
+*YOLOv5 running on a live video frame — real-time detection and character recognition results during video processing.*  
+
+
+**Tech stack:** Python, YOLOv5, OpenCV, MySQL, Django, PhpMyAdmin  
 
 
 ---
@@ -406,107 +499,7 @@ The system allows users to explore, publish, edit, and interact with recipes thr
 **Tech stack:** Java, Spring Boot, Thymeleaf, MySQL, Spring Security, JPA/Hibernate  
 
 
----
 
-## 💼 Professional Experience  
-
-### 🕵️‍♂️ AI-Based Document Forgery Detection — *Attijariwafa Bank Industrial Project*  
-
-**Description:**  
-Developed a hybrid AI system for detecting forged regions in digitized documents by combining **Visual Deep Learning (SegFormer)** with **Semantic Analysis (OCR + LLaMA-3)**.  
-The system aims to localize tampered areas with high precision and analyze textual inconsistencies, providing a comprehensive fraud detection solution for banking operations.  
-
-**Key Features:**  
-- Visual forgery detection using SegFormer-based segmentation model  
-- Hierarchical OCR pipeline for structured text extraction from scanned documents  
-- Semantic inconsistency analysis powered by LLaMA-3 large language model  
-- Microservice-based architecture with Flask (backend) and React (frontend)  
-- Explainable AI with visual attention overlays and semantic mismatch reporting  
-
-**Technical Approach:**  
-- Custom dataset construction with tampered and original documents  
-- Fine-tuned SegFormer model for binary tampering segmentation with hybrid loss (Focal Tversky + Dice)  
-- OCR pipeline combining Tesseract and LLMWhisperer  
-- LLaMA-3 based semantic detection of anomalies in extracted text  
-- REST APIs serving segmentation and semantic analysis results  
-
-**Key Results:**  
-- Visual detection recall: **86.5%** on evaluation set  
-- Average IoU on segmentation masks: **0.72**  
-- System throughput: **< 1.5s per document** on benchmark hardware
-
-**Tech stack:** Python, PyTorch, SegFormer, OCR (LLMWhisperer,Tesseract), LLaMA-3 (Groq API), MongoDB, Flask, React  
-
-
-
-**Sample Results:**  
-
-| Ground Truth vs Predicted Masks |  
-|---|  
-| ![Case 1 - Ground Truth & Prediction](./RES1.png) |  
-*Case 1 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
-
-| ![Case 2 - Ground Truth & Prediction](./RES2.png) |  
-*Case 2 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
-
-| ![Case 3 - Ground Truth & Prediction](./RES3.png) |  
-*Case 3 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
-
----
-
-**Visual Tampering Detection Interface:**  
-
-![Tampering Detection on Document Sample](./RES4.png)  
-*Tampering visualization in the deployed system — the model successfully highlighted forged areas directly on the scanned document within the web application interface.*  
-
-
-
-
-
-
----
-
-### 🛂 Automatic License Plate Recognition System — *Marsa Maroc Security Project*  
-
-**Description:**  
-Developed a real-time **Automatic License Plate Recognition (ALPR)** system using YOLOv5 for securing vehicle exits at Marsa Maroc.  
-The system detects license plates, extracts characters with OCR, and verifies against a database of valid exit permits, aiming to automate and enhance port security.  
-
-**Key Features:**  
-- Real-time license plate detection with **YOLOv5** (trained for 30 epochs)  
-- OCR character extraction with **YOLOv5-based multi-class detection**  
-- Video processing pipeline with detection and database validation  
-- Django-based web interface (in progress) for real-time monitoring  
-- Integrated MySQL for permit management and system logging  
-
-**Performance Highlights:**  
-- License Plate Detection Precision: **97.1%** — Recall: **98.5%**  
-- OCR Character Recognition Precision: **88%** — Recall: **91.9%**  
-- Video Frame Processing Time: **~614ms – 1292ms per frame**  
-- Trained on custom dataset with extended augmentation for robustness
-
-
-**Visual Results & Sample Predictions:**  
-
-![Full Vehicle Detection with License Plate](./Image_car.jpg)  
-
-![Extracted License Plate for OCR](./plate_to_extract_text_from.jpg)  
-*Detected license plate cropped from the vehicle image — ready for character recognition.*  
-
-![YOLOv5 OCR Character Detection Result](./extraction_of_text.jpg)  
-*Character detection output on the license plate — bounding boxes with confidence scores for each recognized character.*  
-
-![Sorted Character Predictions from Model](./detection_res_car.jpg)  
-*Sorted character predictions with bounding box details and class mapping — automated sorting for correct license plate reconstruction.*  
-
-![Class Mapping Dictionary](./mappage.png)  
-*Sample of class mapping dictionary used to decode YOLOv5 class IDs into readable characters (digits/letters).*  
-
-![YOLOv5 Real-Time Detection on Video Frame](./video_detection_res.jpg)  
-*YOLOv5 running on a live video frame — real-time detection and character recognition results during video processing.*  
-
-
-**Tech stack:** Python, YOLOv5, OpenCV, MySQL, Django, PhpMyAdmin  
 
 ---
 
