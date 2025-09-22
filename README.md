@@ -47,25 +47,25 @@ The system leverages Google's Gemini AI models to interpret user questions, auto
 
 ## Visual Results & Interface Demonstrations
 
-![Auto Dashboard Interface](./IMG1_data.png)  
+![Auto Dashboard Interface](./assets/IMG1_data.png)  
 *“Intelligent Dashboard” with uploaded `car_prices.csv`; sidebar controls for preprocessing and customization.*
 
-![Dashboard Management System](./IMG2_data.png)  
+![Dashboard Management System](./assets/IMG2_data.png)  
 *Drag-to-reorder dashboard with 8 active plots (summary, histograms, heatmap, scatter, distribution comparisons).*
 
-![Generated Dashboard Visualizations](./IMG3_data.png)  
+![Generated Dashboard Visualizations](./assets/IMG3_data.png)  
 *6 key visuals: odometer histogram, correlation heatmap, odometer vs. price scatter, top makes bar, body-type distributions, time-series trend.*
 
-![Custom Plot Generation Interface](./IMG4_data.png)  
+![Custom Plot Generation Interface](./assets/IMG4_data.png)  
 *Natural language plot requests (e.g., “Show sales trends over time”) with helpful prompt suggestions.*
 
-![Natural Language Query Results](./IMG5_data.png)  
+![Natural Language Query Results](./assets/IMG5_data.png)  
 *Query “What are the top 5 categories by revenue?” processed via Gemini 2.5 Pro → interactive bar chart.*
 
-![Data Preview & Schema Analysis](./IMG6_data.png)  
+![Data Preview & Schema Analysis](./assets/IMG6_data.png)  
 *First 10 rows + full schema (types: `object`, `int64`, `float64`).*
 
-![Data Quality Assessment Report](./IMG7_data.png)  
+![Data Quality Assessment Report](./assets/IMG7_data.png)  
 *Example: 558,837 × 16 dataset; missing data by column (e.g., transmission 11.69%, body 2.36%, …). Types: 11 `object`, 4 `float64`.*
 
 ## Implementation Architecture
