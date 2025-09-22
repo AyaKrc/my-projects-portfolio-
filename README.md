@@ -115,20 +115,20 @@ The system aims to localize tampered areas with high precision and analyze textu
 
 | Ground Truth vs Predicted Masks |  
 |---|  
-| ![Case 1 - Ground Truth & Prediction](./RES1.png) |  
+| ![Case 1 - Ground Truth & Prediction](./assets/RES1.png) |  
 *Case 1 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
 
-| ![Case 2 - Ground Truth & Prediction](./RES2.png) |  
+| ![Case 2 - Ground Truth & Prediction](./assets/RES2.png) |  
 *Case 2 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
 
-| ![Case 3 - Ground Truth & Prediction](./RES3.png) |  
+| ![Case 3 - Ground Truth & Prediction](./assets/RES3.png) |  
 *Case 3 — Left: Ground Truth Mask, Right: Model Predicted Mask*  
 
 ---
 
 **Visual Tampering Detection Interface:**  
 
-![Tampering Detection on Document Sample](./RES4.png)  
+![Tampering Detection on Document Sample](./assets/RES4.png)  
 *Tampering visualization in the deployed system — the model successfully highlighted forged areas directly on the scanned document within the web application interface.*  
 
 
@@ -157,21 +157,21 @@ The system detects license plates, extracts characters with OCR, and verifies ag
 
 **Visual Results & Sample Predictions:**  
 
-![Full Vehicle Detection with License Plate](./Image_car.jpg)  
+![Full Vehicle Detection with License Plate](./assets/Image_car.jpg)  
 
-![Extracted License Plate for OCR](./plate_to_extract_text_from.jpg)  
+![Extracted License Plate for OCR](./assets/plate_to_extract_text_from.jpg)  
 *Detected license plate cropped from the vehicle image — ready for character recognition.*  
 
-![YOLOv5 OCR Character Detection Result](./extraction_of_text.jpg)  
+![YOLOv5 OCR Character Detection Result](./assets/extraction_of_text.jpg)  
 *Character detection output on the license plate — bounding boxes with confidence scores for each recognized character.*  
 
-![Sorted Character Predictions from Model](./detection_res_car.jpg)  
+![Sorted Character Predictions from Model](./assets/detection_res_car.jpg)  
 *Sorted character predictions with bounding box details and class mapping — automated sorting for correct license plate reconstruction.*  
 
-![Class Mapping Dictionary](./mappage.png)  
+![Class Mapping Dictionary](./assets/mappage.png)  
 *Sample of class mapping dictionary used to decode YOLOv5 class IDs into readable characters (digits/letters).*  
 
-![YOLOv5 Real-Time Detection on Video Frame](./video_detection_res.jpg)  
+![YOLOv5 Real-Time Detection on Video Frame](./assets/video_detection_res.jpg)  
 *YOLOv5 running on a live video frame — real-time detection and character recognition results during video processing.*  
 
 
@@ -238,22 +238,22 @@ End-to-end data analytics project analyzing the perceptions and impacts of infla
 
 **Screenshots:**  
 
-![App Home](./Image2.jpg)  
+![App Home](./assets/Image2.jpg)  
 *Home page of the Inflation Analysis app — entry point to access dataset, forms, and graphs.*  
 
-![Data Collection Form](./Image6.jpg)  
+![Data Collection Form](./assets/Image6.jpg)  
 *Inflation Data Collection Form — collecting key socio-economic data from users.*  
 
-![Submission Confirmation](./Image8.jpg)  
+![Submission Confirmation](./assets/Image8.jpg)  
 *Form submission confirmation page with navigation to table, graphs, and prediction features.*  
 
-![Prediction Result](./Image9.jpg)  
+![Prediction Result](./assets/Image9.jpg)  
 *Prediction interface — provides a summary of personalized insights based on user responses.*  
 
-![Data Visualization](./Image12.jpg)  
+![Data Visualization](./assets/Image12.jpg)  
 *Interactive dashboard — displaying correlation between financial satisfaction and age group.*  
 
-![Hypothesis Test Result](./Image15.jpg)  
+![Hypothesis Test Result](./assets/Image15.jpg)  
 *Hypothesis testing popup with statistical results on perceived price change impact.*  
 
 
@@ -330,7 +330,7 @@ The system classifies four primary emotions — **Happiness, Sadness, Fear, and 
 
 **Sample Prediction Result:**  
 
-![FER Prediction Example](./fer_prediction_result.png)  
+![FER Prediction Example](./assets/fer_prediction_result.png)  
 *Example of a facial emotion recognition prediction on unseen data — the model correctly identified the emotion based on key facial features.*  
 
 
@@ -416,16 +416,16 @@ The system integrates sensors, actuators, and data visualization dashboards, ena
 
 **Screenshots:**  
 
-![Complete System Setup](./Image17.jpg)  
+![Complete System Setup](./assets/Image17.jpg)  
 *Complete system setup integrating Arduino with sensors, actuators, and Raspberry Pi gateway — demonstrating full IoT workflow and communication setup.*  
 
-![LCD Display Output](./Image18.jpg)  
+![LCD Display Output](./assets/Image18.jpg)  
 *LCD display showing real-time weather status and temperature readings, providing direct feedback from the sensors.*  
 
-![Sensor and Actuator Integration](./Image19.jpg)  
+![Sensor and Actuator Integration](./assets/Image19.jpg)  
 *Close-up of the sensor and actuator setup on a breadboard — showcasing LEDs reacting to ambient light and live data being processed by the Arduino.*  
 
-![Node-RED Flow Diagram](./Image20.png)  
+![Node-RED Flow Diagram](./assets/Image20.png)  
 *Node-RED flow representing the system’s logic — managing communication between the gateway, sensors, actuators, and the user interface. It handles light threshold checks, command routing, and dashboard interactions.*  
 
 
@@ -434,10 +434,10 @@ The system integrates sensors, actuators, and data visualization dashboards, ena
 
 # 🎧 Audio Compression System — *IRM Custom Audio Format*  
 
-![IRM Audio Compression Interface](./Image1.png)  
+![IRM Audio Compression Interface](./assets/Image1.png)  
 *Interface of the application allowing users to select audio files and apply the IRM compression algorithm.*  
 
-![Compression Result Example](./image.png)  
+![Compression Result Example](./assets/image.png)  
 *Output showcasing compression results, file size reduction, and comparison with standard formats.*  
 
 **Description:**  
